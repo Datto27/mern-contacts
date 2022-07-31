@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: radial-gradient($grey2, $grey1);
+}
+
+// ამ გვერდისათვის საჭირო სხვა სტილები უკვე გაწერილია _register.scss-ში რომელიც ისედაც იმპორტდება global.scss-ში

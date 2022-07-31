@@ -1,0 +1,80 @@
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid grey;
+}
+.call-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: green;
+  height: 35px;
+  width: 35px;
+  margin-right: 4vw;
+  border-radius: 50%;
+  &:hover {
+    background: rgb(1, 163, 1);
+  }
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  .name {
+    margin-right: 4vw;
+  }
+}
+
+.editing-item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid grey;
+  input {
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    color: white;
+    background-color: $grey2;
+    padding: 4px 7px;
+    // margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 2px black;
+    transition: 0.2s ease-out;
+    &:focus {
+      transform: scale(102%);
+      box-shadow: 0 2px 3px black;
+    }
+  }
+  .save-btn {
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    font-size: 1.05rem;
+    color: white;
+    background: linear-gradient(120deg, $blue1, $blue2);
+    background-size: 300%;
+    padding: 5px 12px;
+    // margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+    transition: .2s ease-in-out;
+    &:hover {
+      transform: scale(97%);
+      background-size: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .editing-item {
+    input {
+      margin-bottom: 10px;
+    }
+  }
+}

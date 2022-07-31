@@ -1,0 +1,46 @@
+.my-input {
+  width: 100%;
+  h4 {
+    margin-bottom: 15px;
+  }
+}
+.input-container {
+  display: flex;
+  flex-flow: row;
+  // background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 7px 10px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px black;
+  transition: 0.3s ease-in-out;
+  // შიგნით არსებული ინფუთის დაფოკუსებისას
+  &:focus-within {
+    transform: scale(103%);
+    box-shadow: 0 2px 20px black;
+  }
+}
+.input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+  color: white;
+  background-color: transparent;
+  margin-right: 4px;
+}
+.valid {
+  border: 1px solid green;
+  box-shadow: 0 0px 5px green;
+  &:focus-within {
+    box-shadow: 0 0px 10px green;
+  }
+}
+.not-valid {
+  border: 1px solid red;
+  box-shadow: 0 0px 5px red;
+  &:focus-within {
+    box-shadow: 0 0px 10px red;
+  }
+}

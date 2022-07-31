@@ -1,0 +1,19 @@
+// colors
+$grey1: #141414;
+$grey2: #262626;
+$blue1: #041747;
+$blue2: #1f3b82;
+$red1: #c70212;
+$red2: #ff2b3d;
+$white: #f2f2f2;
+$transparentBlack: rgba(0,0,0,0.35);
+
+// mixins
+@mixin glassEffect {
+  background: rgba(0,0,0,0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(1.8px);
+  border: 1px solid rgba(0,0,0,0.3);
+}

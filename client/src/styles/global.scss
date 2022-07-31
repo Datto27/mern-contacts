@@ -1,0 +1,23 @@
+@import "./pages/register";
+@import "./pages/login";
+@import "./pages/home";
+@import "./components/myInput";
+@import "./components/myAlert";
+@import "./components/contactItem";
+
+// styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  // font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+#root {
+  height: 100vh;
+}

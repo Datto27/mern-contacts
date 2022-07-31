@@ -1,0 +1,58 @@
+@import "../variables.scss";
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient($grey2, $grey1);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+.form-window {
+  @include glassEffect;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 60%;
+  // background-color: $transparentBlack;
+  padding: 40px;
+  border-radius: 15px;
+  form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+  }
+  .submit-btn {
+    border: none;
+    cursor: pointer;
+    width: 120px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(120deg, $blue1, $blue2);
+    background-size: 300%;
+    padding: 7px 12px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px black;
+    transition: .2s ease-in-out;
+    &:hover {
+      transform: scale(97%);
+      background-size: 100%;
+    }
+  }
+  .link {
+    display: inline-block;
+    font-size: 0.8rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .form-window {
+    width: 90%;
+    form {
+      width: 90%;
+    }
+  }
+}

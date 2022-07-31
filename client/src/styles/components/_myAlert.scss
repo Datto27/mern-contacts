@@ -1,0 +1,49 @@
+@import "../variables.scss";
+
+.alert {
+  position: absolute;
+  top: 20px;
+  left: 0; 
+  right: 0; 
+  text-align: center;
+  margin: 0 10vw;
+  padding: 15px;
+  background-color: $grey2;
+}
+.error {
+  border: 1px solid red;
+  border-radius: 20px;
+  animation: alertAnim 0.2s;
+  .error-message {
+    color: red;
+  }
+}
+.success {
+  border: 1px solid green;
+  border-radius: 20px;
+  animation: alertAnim 0.2s;
+  .success-message {
+    color: green;
+  }
+}
+
+@keyframes alertAnim {
+  0% {
+    top: -200px;
+  }
+  60% {
+    top: 40px;
+  }
+  70% {
+    top: 0px;
+  }
+  80% {
+    top: 30px;
+  }
+  90% {
+    top: 10px;
+  }
+  100% {
+    top: 20px;
+  }
+}
